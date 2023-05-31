@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    font-size:1.2rem;
+}
+
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.left{
+    border-right: 2px solid black;
+    width:25%;
+}
+
+#navbar{
+    position: sticky;
+    top:0;
+    height:5rem;
+    min-width: 10rem;
+}
+
+#navbar header, #navbar ul li:not(#navbar li:last-of-type){
+    border-bottom: 2px solid gray;
+}
+
+#navbar h1{
+    margin:0;
+    font-weight: 650;
+    font-size: 2.1rem;
+    margin-left:0.8rem;
+    padding:0.5rem 0.75rem;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+#navbar ul a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding:0.5rem 0.75rem;
+    margin-left:0.8rem;
+}
+
+.right{
+    width:60%;
+    margin:auto;
+}
+
+.main-section p,.main-section ul,.main-section code{
+    margin-left:1rem;
+}
+
+
+code{
+    background-color:#4f4f5355;
+    width:100%;
+    display: block;
+    padding:0.75rem 0.2rem 1.0rem 0.8rem;
+}
+
+.main-section li{
+    margin:0.5rem;
+}
+
+.six{
+    list-style-type: circle;
+}
+
+.six-container{
+    margin-left:2rem;
+}
+
+@media (max-width:1220px) and (min-width:300px){
+    body{
+        font-size:0.5rem;
+    }
+
+    #navbar h1{
+        font-size:0.8rem;
+    }
+
+    #navbar{
+        width: 100%;
+    }    
+
+    
+}
+
+@media (max-width:630px){
+
+    *,::before,::after{
+        box-sizing: border-box;
+    }
+
+    #navbar{
+        width:100%;
+        min-width:3.5rem;
+    }
+    #navbar h1{
+        font-size:0.5rem;
+        margin-left: 0.1em;
+        text-align: center;
+    }
+
+    code{
+        width:90%;
+        overflow: scroll;
+    }
+
+    #navbar ul a{
+        display: block;
+        margin-left: 0.2em;
+    }
+
+    .main-section{
+        overflow-x: hidden;
+    }
+
+    .left{
+        width:8rem;
+    }
+}
+
